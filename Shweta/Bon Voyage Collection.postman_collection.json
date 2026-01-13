@@ -1,0 +1,242 @@
+{
+	"info": {
+		"_postman_id": "d4125749-6931-44b5-9c12-1a171a7f43ae",
+		"name": "Bon Voyage Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47027611",
+		"_collection_link": "https://aerospace-pilot-17468050-5521700.postman.co/workspace/Shweta-Sharma's-Workspace~6f3146cf-27e9-4eae-8e90-bc82445ec084/collection/47027611-d4125749-6931-44b5-9c12-1a171a7f43ae?action=share&source=collection_link&creator=47027611"
+	},
+	"item": [
+		{
+			"name": "Packages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/packages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"packages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bookings",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Wishlist",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/wishlist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"wishlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PackageId",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Package_City",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"Alice\",\r\n    \"userEmail\": \"alice@gmail.com\",\r\n    \"userPassword\": \"Wonderland1#\",\r\n    \"userPhone\": \"1234567890\",\r\n    \"userAddress\": \"Disney World\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bookings",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"userID\": \"U101\",\r\n       \"bookingID\": \"P102\",\r\n        \"bookingDate\": \"2025-02-28\",\r\n        \"bookingPerson\": \"5\",\r\n        \"bookingRooms\": \"2\",\r\n        \"packageName\": \"London Extravaganza: A Captivating 3-Day Journey through Royal Majesty, Artistic Splendors, and Urban Marvels\",\r\n        \"packageImage\": \"London Extravaganza: A Captivating 3-Day Journey through Royal Majesty, Artistic Splendors, and Urban Marvels\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/bookings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bookings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users?userEmail=${mathanmsc@hotmail.com}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "userEmail",
+							"value": "${mathanmsc@hotmail.com}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Wishlist",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/wishlist/P103",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"wishlist",
+						"P103"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bookings",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userID\": \"U101\",\r\n\"bookingID\": \"P102\",\r\n\"bookingDate\": \"2025-02-28\",\r\n\"bookingPerson\": \"5\",\r\n\"bookingRooms\": \"2\",\r\n\"packageName\": \"London Extravaganza: A Captivating 3-Day Journey through Royal Majesty, Artistic Splendors, and Urban Marvels\",\r\n\"packageImage\": \"London Extravaganza: A Captivating 3-Day Journey through Royal Majesty, Artistic Splendors, and Urban Marvels\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/bookings/P105",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bookings",
+						"P105"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bookingID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/bookings/P101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bookings",
+						"P101"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
